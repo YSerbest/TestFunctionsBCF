@@ -5,6 +5,8 @@ class BathCorrelationFunctionIntegral:
     """
     Class to calculate the bath correlation function using the integral definition 'C(t)=integral from negative
     infinity to infinity of the following integrand: (1/2*pi)*J(omega)[coth(beta*hbar*omega/2)+1]*np.exp(-j*omega*t)'
+    This Calculation evaluates the real part of the bath correlation function. The complex result can be found under the 
+    file BCFrealandim.py .
     """
     def __init__(self, eta, omega_c, beta, s, hbar=1.0):
         """
